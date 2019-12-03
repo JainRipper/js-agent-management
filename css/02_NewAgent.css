@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+#success_message{ display: none;}
+#auState, #nzState, #auAreaCode, #nzAreaCode {
+    display:none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+	margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+legend {
+	width: 90%;
+}
+.row {
+	display: flex;
+	box-shadow: 0 0 250px #000;
+	border-radius: 10px;
+}
+.well {
+	margin: 20px 0;
+	padding: 0;
+	border: none;
+}
+.form-left {
+    background: #fff;
+	/* padding-bottom: 27.2rem; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.form-group {
+	margin-bottom: 5px;
+}
+.form-left legend {
+	margin: 1em;
+	margin-right: 0;
+}
+.form-right {
+  background-image: -webkit-linear-gradient( 136deg, rgb(139,198,236) 0%, #2980b9 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+	color: #fff;
+}
+.form-right legend {
+    margin: 1em;
+    margin-right: 0;
+	color: #fff;
+}
+.form-right label {
+    font-weight: 500;
+}
+.fieldset {
+	padding: 0;
+	border: 0;
+}
+.btn-click {
+	float: right;
+	margin: 1em 0.5em;
+	width: 35%;
+}
+#contact_form {
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+#btnSubmit {
+	width: 100%;
+}
+
+@media(max-width: 625px) {
+  body {
+    height: 110rem;
+  }
+  .row {
+    flex-flow: column wrap;
+  }
+  .form-left {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    padding-bottom: 2em;
+  }
+  .form-left legend {
+        margin: 1em;
+  }
+  .form-right {
+    border-bottom-left-radius: 10px;
+  }
+}
